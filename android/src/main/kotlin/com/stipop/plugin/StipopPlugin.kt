@@ -100,7 +100,9 @@ class StipopPlugin : FlutterPlugin, MethodCallHandler, StipopDelegate, ActivityA
                 }
             }
             TAG_HIDE_KEYBOARD -> {
-                this.hideKeyboard()
+                /// comment out this as keyboard stays on screen
+                /// when hiding stipop keyboard
+                ///this.hideKeyboard()
                 Stipop.hideKeyboard()
                 result.success(true)
             }
